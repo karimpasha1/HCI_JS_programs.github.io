@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo quiz</title>
+    <script>
+        function result()
+        {
+            var ele=document.getElementsByName("capital");
+            for(i=0;i<ele.length;i++)
+            {
+                if(ele[i].checked)
+                {
+                    if(ele[i].value=="Delhi")
+                    {
+                        document.getElementById("res").innerHTML="correct";
+                    }
+                    else
+                    {
+                        document.getElementById("res").innerHTML="incorrect"
+                    }
+                }
+            }
+        }
+        function result1()
+        {
+            var ele=document.getElementsByName("animal");
+            for(i=0;i<ele.length;i++)
+            {
+                if(ele[i].checked)
+                {
+                    if(ele[i].value=="Camel")
+                    {
+                        document.getElementById("res1").innerHTML="correct";
+                    }
+                    else
+                    {
+                        document.getElementById("res1").innerHTML="incorrect"
+                    }
+                }
+            }
+        }
+        function result2()
+        {
+            var ele=document.getElementsByName("pm");
+            for(i=0;i<ele.length;i++)
+            {
+                if(ele[i].checked)
+                {
+                    if(ele[i].value=="Anthony Albanese")
+                    {
+                        document.getElementById("res2").innerHTML="correct";
+                    }
+                    else
+                    {
+                        document.getElementById("res2").innerHTML="incorrect"
+                    }
+                }
+            }
+        }
+        function result3()
+        {
+            var ele=document.getElementsByName("cricket");
+            for(i=0;i<ele.length;i++)
+            {
+                if(ele[i].checked)
+                {
+                    if(ele[i].value=="3")
+                    {
+                        document.getElementById("res3").innerHTML="correct";
+                    }
+                    else
+                    {
+                        document.getElementById("res3").innerHTML="incorrect"
+                    }
+                }
+            }
+        }
+        function result4()
+        {
+            var ele=document.getElementsByName("frog");
+            for(i=0;i<ele.length;i++)
+            {
+                if(ele[i].checked)
+                {
+                    if(ele[i].value=="Tadpole")
+                    {
+                        document.getElementById("res4").innerHTML="correct";
+                    }
+                    else
+                    {
+                        document.getElementById("res4").innerHTML="incorrect"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <center><h1>Welcome to quiz</h1></center>
+    <h2>1. What is the capital of India?</h2><br>
+    <input type="radio" name="capital" value="Delhi">Delhi<br>
+    <input type="radio" name="capital" value="Hyderabad">Hyderabad<br>
+    <input type="radio" name="capital" value="Chennai">Chennai<br>
+    <input type="radio" name="capital" value="Mumbai">Mumbai<br>
+    <input type="button" value="submit" onclick="result()">
+    <div id="res"></div>
+
+    <h2>2. Which animal is known as the Ship of the desert?</h2><br>
+    <input type="radio" name="animal" value="Tiger">Tiger<br>
+    <input type="radio" name="animal" value="Elephant">Elephant<br>
+    <input type="radio" name="animal" value="Camel">Camel<br>
+    <input type="radio" name="animal" value="Lion">Lion<br>
+    <input type="button" value="submit" onclick="result1()"></h2>
+    <div id="res1"></div>
+
+    <h2>3. Who is the prime minister of Australia?</h2><br>
+    <input type="radio" name="pm" value="Joe biden">Joe biden<br>
+    <input type="radio" name="pm" value="Kim">Kim<br>
+    <input type="radio" name="pm" value="Anthony Albanese">Anthony Albanese<br>
+    <input type="radio" name="pm" value="Putin">Putin<br>
+    <input type="button" value="submit" onclick="result2()"></h2>
+    <div id="res2"></div>
+
+    <h2>4. How many times did India win the worldcup?</h2><br>
+    <input type="radio" name="cricket" value="0">0<br>
+    <input type="radio" name="cricket" value="1">1<br>
+    <input type="radio" name="cricket" value="2">2<br>
+    <input type="radio" name="cricket" value="3">3<br>
+    <input type="button" value="submit" onclick="result3()"></h2>
+    <div id="res3"></div>
+
+    <h2>5. Baby frog is knwon as?</h2><br>
+    <input type="radio" name="frog" value="Tadpole">Tadpole<br>
+    <input type="radio" name="frog" value="Pup">Pup<br>
+    <input type="radio" name="frog" value="Joey">Joey<br>
+    <input type="radio" name="frog" value="Froggie">Froggie<br>
+    <input type="button" value="submit" onclick="result4()"></h2>
+    <div id="res4"></div>
+</body>
+</html>
